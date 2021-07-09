@@ -16,7 +16,7 @@ Ky projekt është zhvilluar nga studentët e vitit të dytë FIEK, drejtimi Inx
 - Egzon Gashi []()
 - Betim Dinaj []()
 - Albiona Vukaj []()
-- Albina Ahmeti []()
+- Albina Ahmeti [@AlbinaAhmeti](https://github.com/AlbinaAhmeti)
 
 Asistenti i lëndes:
 - Vigan Abdurrahmani
