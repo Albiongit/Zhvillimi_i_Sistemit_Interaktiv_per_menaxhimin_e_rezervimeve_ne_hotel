@@ -19,7 +19,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-public class EmployeesController implements Initializable {
+public class EmployeesController extends ChildController {
 
 
     @FXML
@@ -59,13 +59,13 @@ public class EmployeesController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        this.idColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
-        this.nameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
-        this.lastnameColumn.setCellValueFactory(new PropertyValueFactory<>("lastname"));
-        this.phoneColumn.setCellValueFactory(new PropertyValueFactory<>("phone"));
-        this.jobtimeColumn.setCellValueFactory(new PropertyValueFactory<>("jobtime"));
-        this.salaryColumn.setCellValueFactory(new PropertyValueFactory<>("salary"));
-        tableView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+//        this.idColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
+//        this.nameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
+//        this.lastnameColumn.setCellValueFactory(new PropertyValueFactory<>("lastname"));
+//        this.phoneColumn.setCellValueFactory(new PropertyValueFactory<>("phone"));
+//        this.jobtimeColumn.setCellValueFactory(new PropertyValueFactory<>("jobtime"));
+//        this.salaryColumn.setCellValueFactory(new PropertyValueFactory<>("salary"));
+//        tableView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
         //tableView.getSelectionModel().selectedItemProperty().addListener((ov, old, _new) -> {
           // if (_new != null)
                // setEmployeesToUI(_new);

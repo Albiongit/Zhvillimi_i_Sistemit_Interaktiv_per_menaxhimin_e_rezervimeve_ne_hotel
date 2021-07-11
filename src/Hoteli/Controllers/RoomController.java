@@ -8,59 +8,56 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
-import Hoteli.models.Invoice;
 import Hoteli.models.Reservation;
+import Hoteli.models.Room;
 
 import java.net.URL;
 import java.util.Date;
 import java.util.ResourceBundle;
 
-public class ReservationController extends ChildController{
+public class RoomController extends ChildController {
 
-    //Connection conn
 
-    @FXML
-    private TableView<Reservation> tableView;
 
     @FXML
-    private TableColumn<Reservation, Integer> reservationColumn;
+    private TableView<Room> tableView;
 
     @FXML
-    private TableColumn<Reservation, Integer> roomColumn;
+    private TableColumn<Room,Integer> roomIDColumn;
 
     @FXML
-    private TableColumn<Reservation, String> clientNameColumn;
+    private TableColumn<Room, Integer> room_nrColumn;
 
     @FXML
-    private TableColumn<Reservation, Double> priceColumn;
+    private TableColumn<Room, Integer> room_floorColumn;
 
     @FXML
-    private TableColumn<Reservation, Date> reservation_dateColumn;
+    private TableColumn<Room, String> room_categoryColumn;
 
     @FXML
-    private TextField reservationField;
-    @FXML
-    private TextField roomField;
-    @FXML
-    private TextField clientNameField;
-    @FXML
-    private TextField priceField;
-    @FXML
-    private DatePicker reservation_dateField;
+    private TableColumn<Room, Date> room_StatusColumn;
 
+    @FXML
+    private TextField roomIDField;
+    @FXML
+    private TextField room_nrField;
+    @FXML
+    private TextField room_floorField;
+    @FXML
+    private TextField room_categoryField;
+    @FXML
+    private TextField room_StatusField;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-//        this.reservationColumn.setCellValueFactory(new PropertyValueFactory<>("ReservationID"));
-//        this.roomColumn.setCellValueFactory(new PropertyValueFactory<>("RoomID"));
-//        this.clientNameColumn.setCellValueFactory(new PropertyValueFactory<>("ClientName"));
-//        this.priceColumn.setCellValueFactory(new PropertyValueFactory<>("Price"));
-//        this.reservation_dateColumn.setCellValueFactory(new PropertyValueFactory<>("Reservation_date"));
-
-
-
+//        this.roomIDColumn.setCellValueFactory(new PropertyValueFactory<>("RoomID"));
+//        this.room_nrColumn.setCellValueFactory(new PropertyValueFactory<>("Room_nr"));
+//        this.room_floorColumn.setCellValueFactory(new PropertyValueFactory<>("Room_floor"));
+//        this.room_categoryColumn.setCellValueFactory(new PropertyValueFactory<>("Room_category"));
+//        this.room_StatusColumn.setCellValueFactory(new PropertyValueFactory<>("Room_Status"));
 
     }
+
     //try{
     //  initDb();
     //ObservableList<Student> items=FXCollections.observableArrayList(getStudents());
@@ -182,4 +179,5 @@ public class ReservationController extends ChildController{
         //yearField.clear();
         //tableView.getSelectionModel().clearSelection();
     }
+
 }

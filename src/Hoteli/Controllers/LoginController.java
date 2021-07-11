@@ -13,7 +13,6 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import javafx.scene.Scene;
 import javafx.scene.Node;
-import Hoteli.models.User;
 import Hoteli.utils.SecurityHelper;
 
 import javax.swing.*;
@@ -34,9 +33,7 @@ public class LoginController implements Initializable {
     @FXML
     private void onLoginButtonClick(ActionEvent e){
         try {
-//            User user = null;
-//            String email= emailField.getText();
-//            String password=passwordField.getText();
+
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("../views/Home2.fxml"));
             Parent parent = loader.load();

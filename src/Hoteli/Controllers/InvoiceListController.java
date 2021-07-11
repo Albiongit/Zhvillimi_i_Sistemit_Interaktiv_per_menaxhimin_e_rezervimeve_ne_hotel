@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.ResourceBundle;
 
-public class InvoiceListController implements Initializable {
+public class InvoiceListController extends ChildController {
     //Connection conn
 
     @FXML
@@ -55,11 +55,11 @@ public class InvoiceListController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        this.invoiceColumn.setCellValueFactory(new PropertyValueFactory<>("InvoiceID"));
-        this.reservationColumn.setCellValueFactory(new PropertyValueFactory<>("ReservationID"));
-        this.amountColumn.setCellValueFactory(new PropertyValueFactory<>("Amount"));
-        this.amount_paidColumn.setCellValueFactory(new PropertyValueFactory<>("Amount_paid"));
-        this.dateColumn.setCellValueFactory(new PropertyValueFactory<>("Date"));
+//        this.invoiceColumn.setCellValueFactory(new PropertyValueFactory<>("InvoiceID"));
+//        this.reservationColumn.setCellValueFactory(new PropertyValueFactory<>("ReservationID"));
+//        this.amountColumn.setCellValueFactory(new PropertyValueFactory<>("Amount"));
+//        this.amount_paidColumn.setCellValueFactory(new PropertyValueFactory<>("Amount_paid"));
+//        this.dateColumn.setCellValueFactory(new PropertyValueFactory<>("Date"));
 
         //try{
           //  initDb();

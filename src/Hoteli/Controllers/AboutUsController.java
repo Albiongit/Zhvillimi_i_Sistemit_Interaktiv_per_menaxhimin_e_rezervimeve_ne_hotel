@@ -13,18 +13,12 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class AboutUsController implements Initializable {
+public class AboutUsController extends ChildController {
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
     }
-    @FXML
-    void onBackClick(ActionEvent e) throws IOException {
-         Stage primaryStage = (Stage) ((Node)e.getSource()).getScene().getWindow();
-        Parent parent = FXMLLoader.load(getClass().getResource("views/Home2.fxml"));
-        Scene scene = new Scene(parent);
-        primaryStage.setScene(scene);
-    }
+
 }

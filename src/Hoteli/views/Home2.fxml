@@ -7,6 +7,7 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.input.KeyCodeCombination?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
@@ -35,19 +36,34 @@
               <menus>
                 <Menu mnemonicParsing="false" text="File">
                   <items>
-                    <MenuItem mnemonicParsing="false" text="LogOut" />
-                        <MenuItem mnemonicParsing="false" text="Exit" />
+                    <MenuItem mnemonicParsing="false" onAction="#onLogoutMenuClick" text="LogOut">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="L" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#onExitMenuClick" text="Exit">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="X" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+                           </accelerator></MenuItem>
                   </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Insert">
                   <items>
-                    <MenuItem mnemonicParsing="false" text="Invoice" />
-                        <MenuItem mnemonicParsing="false" text="Reservation" />
+                    <MenuItem mnemonicParsing="false" onAction="#onInvoiceMenuClick" text="Invoice">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="I" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#onReservationMenuClick" text="Reservation">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="R" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+                           </accelerator></MenuItem>
                   </items>
                 </Menu>
-                  <Menu mnemonicParsing="false" text="Unspecified Menu">
+                  <Menu mnemonicParsing="false" text="Help">
                     <items>
-                      <MenuItem mnemonicParsing="false" text="About" />
+                      <MenuItem mnemonicParsing="false" onAction="#onAboutMenuClick" text="About">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="H" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+                           </accelerator></MenuItem>
                     </items>
                   </Menu>
               </menus>
@@ -66,10 +82,11 @@
                   <Label text="Navigation" />
                </children>
             </HBox>
-            <Button maxWidth="1.7976931348623157E308" minWidth="120.0" mnemonicParsing="false" styleClass="nav-link" text="Reservation" />
-            <Button maxWidth="1.7976931348623157E308" minWidth="120.0" mnemonicParsing="false" styleClass="nav-link" text="Invoices" />
-            <Button maxWidth="1.7976931348623157E308" minWidth="120.0" mnemonicParsing="false" styleClass="nav-link" text="Puntoret" textFill="WHITE" />
-            <Button maxWidth="1.7976931348623157E308" minWidth="120.0" mnemonicParsing="false" styleClass="nav-link" text="About Us" />
+            <Button maxWidth="1.7976931348623157E308" minWidth="120.0" mnemonicParsing="false" onAction="#onReservationNavClick" styleClass="nav-link" text="Reservation" />
+            <Button maxWidth="1.7976931348623157E308" minWidth="120.0" mnemonicParsing="false" onAction="#onInvoicesNavClick" styleClass="nav-link" text="Invoices" />
+            <Button maxWidth="1.7976931348623157E308" minWidth="120.0" mnemonicParsing="false" onAction="#onEmployeesNavClick" styleClass="nav-link" text="Employees" textFill="WHITE" />
+            <Button maxWidth="1.7976931348623157E308" minWidth="120.0" mnemonicParsing="false" onAction="#onAboutNavClick" styleClass="nav-link" text="About Us" />
+            <Button maxWidth="1.7976931348623157E308" minWidth="120.0" mnemonicParsing="false" onAction="#onRoomNavClick" styleClass="nav-link" text="Room" />
          </children>
       </VBox>
    </left>
